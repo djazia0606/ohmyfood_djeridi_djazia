@@ -1,0 +1,332 @@
+body {
+    font-family:$font-texte;
+  }
+  
+  .img {
+    width: 100%;
+    height: 170px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #logo {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    object-fit: cover;
+  
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+    height: 45px;
+    }
+  
+  #icon-location {
+    margin-right: 10px;
+  }
+  
+  #input-search {
+    border: #dedede;
+    background-color:#dedede;
+  }
+  
+  .presentation {
+    width: 100%;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+  
+  .title-presentation {
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+  .text{
+    font-weight: 200;
+    text-align: center;
+    margin:unset;
+    margin-top: Opx;
+    margin-bottom: 30px;
+    }
+  .title-fonctioning{
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .btn-1 {
+    width:50%;
+    height: 49px;
+    border: 1px solid transparent;
+    background-image:linear-gradient($secondary-color,$primary-color);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px #dedede;
+    margin-bottom: 40px;
+  }
+  .btn-1:hover{
+    background: lighten($color: $secondary-color, $amount: 10);
+  }
+  
+  .title-btn-1 {
+    width: 100%;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    
+  }
+  .fct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .btn-2 {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dedede;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 10px #dedede;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .btn-2:hover{
+    background-color:$secondary-color;
+  }
+  .icon {
+    margin-right: 20px;
+  }
+  
+  .title-btn-2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .number {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    border-radius: 50% 50% 50% 50%;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -1%;
+  }
+  .restaurants {
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding-bottom: 40px;
+  }
+  .title-cards{
+    margin: unset;
+    margin-left: 20px;
+    padding-top: 60px;
+    padding-bottom:20px;
+  }
+  
+  .card{
+    height: 250px;
+    width: 93%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #dedede;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+  .img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    position: relative;
+  }
+  .superpostion{
+    position: relative;
+  }
+  .text-over{
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    background: $terciary-color;
+    left: 75%;
+    top:1%
+  }
+  .title-card{
+      margin-top: 10px;
+      margin-left: 15px;
+      margin-bottom: 5px;
+  }
+  .text-heart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .heart{
+    margin-right:40px;
+    font-size:larger
+  }
+  .name{
+    margin: 0px;
+    margin-left: 15px;
+    font-weight: 300;
+  }
+  footer{
+    width: 100%;
+    height: 190px;
+    background:darken($color: grey, $amount: 30);
+    color: white;
+  
+  }
+  .title-logo{
+    font-family: Shrikhand;
+    font-size:large;
+    margin-left: 35px;
+    padding-top: 20px;
+  }
+  ul{
+    list-style: none;
+    
+  }
+  li{
+    margin-bottom: 3px;
+  }
+  .contact{
+    color: white;
+  }
+  .list{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    
+  }
+  .icon-foot{
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 992px) {
+    body{
+      width: 100%;
+    }
+    #logo{
+      width: 40%;
+      margin-left:350px;
+    }
+    .search{
+      width: 100%;
+      height:100px;
+    }
+    #input-search{
+      font-size: 25px;
+    }
+    .fcts{
+      display: flex;
+    }
+    .fct{
+      width:50%;
+      position: relative;
+    }
+    .title-presentation{
+      width: 100%;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      margin-bottom:0px;
+    }
+    .text{
+      width: 100%;
+      font-size: 30px;
+    }
+    h1{
+      text-align: center;
+      font-size: 40px;
+      padding-bottom:20px;
+    }
+    .functioning{
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-1{
+      width: 30%;
+      height: 80px;
+      margin-bottom: 50px;
+      font-size: 15px;
+    }
+    .title-btn-1{
+      font-size: 25px;
+      flex-wrap: nowrap;
+    }
+    .btn-2{
+      height: 100px;
+    }
+    .title-btn-2{
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .number{
+      width: 35px;
+      height: 35px;
+      position:absolute;
+      left: -3px;
+    }
+    .btn-2:hover{
+      background-color:$secondary-color;
+    }
+    .cards{
+      display:flex;
+      
+    }
+    .footer-items{
+      display: flex;
+      justify-content:space-around;
+      margin-top: 40px;
+    }
+    .title-logo{
+     text-align: center;
+     font-size:30px;
+    }
+    .list{
+      font-size: 18px;
+    }
+    .li{
+      font-size: 18px;
+    }
+    .contact{
+      font-size: 18px;
+    }
+  }
