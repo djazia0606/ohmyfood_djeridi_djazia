@@ -1,4 +1,10 @@
 /* pages menu */
+body{
+  background-color:$lightergrey;
+}
+.main-restaurants{
+  height: 1200px;
+}
 .menu{
     width: 100%;
     background:#f2f2f2;
@@ -13,26 +19,26 @@
   }
   .arrow{
     margin-left: 20px;
-    
-    
   }
   header{
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    
   }
   .img{
     border-radius: 0px;
     position: relative;
   }
   .title-menu{
+    background-color: $lightergrey;
     font-family: Shrikhand;
+    font-size:300;
     margin-left: 15px;
   }
   
 
   .title-heart{
+    background-color: $lightergrey;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -55,8 +61,11 @@
   h4{
     font-weight: 300;
     margin: 0px;
-    margin-left: 10px;
-    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+
   
   }
   .title{
@@ -91,10 +100,9 @@
   .plats{
     margin-left: 10px;
     margin-right: 10px;
-    background-color: brown;
   }
   .dessert{
-    margin-left: 10px;
+     margin-left: 10px;
     margin-right: 10px;
   }
   .btn-comm{
@@ -107,7 +115,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px #dedede;
-    margin:inherit;
+    margin-top: 20px;
   
     
   }
@@ -120,29 +128,90 @@
     text-align: center;
     
   }
-  
-  @media screen and (min-width:992px){
-    .entry{
-      display: flex;
-      justify-content: space-between;
-  }
-    .plats{
-      display: flex;
-      justify-content: space-between;
-    }
-    .desserts{
-      display: flex;
-      justify-content: space-between;
-    }
-    .dish{
-      width: 30%;
+  .menus{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color:$lightergrey;
+    .menus-category{
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      
+      p{
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .menu-item{
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 2px 1px 8px -3px #000000;
+        .description{
+          padding: 1rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .prix{
+          display: flex;
+          align-self: flex-end;
+          margin-left: auto;
+          font-weight: 700;
+          padding: 1rem;
+        }
+        
+        .animation{
+          $button-width:4rem;
+          background-color: $terciary-color;
+          margin-right: -1 *$button-width;
+          width: $button-width;
+          border-radius: 0 1rem 1rem 0;
+          transition:margin-right 0.5s;
+          display: flex;
+          justify-content: center;
+          place-items: center;
+        
+        }
+        .checky{
+          display:grid;
+          place-items: center;
+          background: white;
+          width: 2rem;
+          aspect-ratio: 1;
+          border-radius: 1rem;
+          color:$terciary-color;
+        }
+        
+        &:hover{
+          .animation{
+            margin-right: 0;
+          }
+          .checky{
+            animation: quarter-spin 0.5s ease-in-out;
+          }
     }
 
-    h3{
-      margin-bottom: 0px;
+      }
     }
-  .title-btn-1{
-    font-size: 17px;
+}
+   
+
+  
+  .resto-main{
+  padding:0 1rem;
+  background-color:$lightergrey;
   }
-  }
+  
+  
+  @media screen and (min-width:992px){
+    .menus{
+      grid-template-columns: 1fr;
+    }
+    }
+    
   

@@ -66,6 +66,10 @@ a {
   margin-bottom: 30px;
 }
 
+.functioning {
+  background-color: #ffffff;
+}
+
 .title-fonctioning {
   margin-left: 20px;
   margin-top: 40px;
@@ -350,6 +354,14 @@ li {
   }
 }
 /* pages menu */
+body {
+  background-color: #F6F6F6;
+}
+
+.main-restaurants {
+  height: 1200px;
+}
+
 .menu {
   width: 100%;
   background: #f2f2f2;
@@ -380,11 +392,14 @@ header {
 }
 
 .title-menu {
+  background-color: #F6F6F6;
   font-family: Shrikhand;
+  font-size: 300;
   margin-left: 15px;
 }
 
 .title-heart {
+  background-color: #F6F6F6;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -409,8 +424,9 @@ h3 {
 h4 {
   font-weight: 300;
   margin: 0px;
-  margin-left: 10px;
-  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .title {
@@ -467,7 +483,7 @@ h4 {
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 10px #dedede;
-  margin: inherit;
+  margin-top: 20px;
 }
 
 .title-comm {
@@ -479,27 +495,78 @@ h4 {
   text-align: center;
 }
 
+.menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: #F6F6F6;
+}
+.menus .menus-category {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menus .menus-category p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus .menus-category .menu-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: 2px 1px 8px -3px #000000;
+}
+.menus .menus-category .menu-item .description {
+  padding: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus .menus-category .menu-item .prix {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  font-weight: 700;
+  padding: 1rem;
+}
+.menus .menus-category .menu-item .animation {
+  background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  transition: margin-right 0.5s;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.menus .menus-category .menu-item .checky {
+  display: grid;
+  place-items: center;
+  background: white;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  color: #99E2D0;
+}
+.menus .menus-category .menu-item:hover .animation {
+  margin-right: 0;
+}
+.menus .menus-category .menu-item:hover .checky {
+  animation: quarter-spin 0.5s ease-in-out;
+}
+
+.resto-main {
+  padding: 0 1rem;
+  background-color: #F6F6F6;
+}
+
 @media screen and (min-width: 992px) {
-  .entry {
-    display: flex;
-    justify-content: space-between;
-  }
-  .plats {
-    display: flex;
-    justify-content: space-between;
-  }
-  .desserts {
-    display: flex;
-    justify-content: space-between;
-  }
-  .dish {
-    width: 30%;
-  }
-  h3 {
-    margin-bottom: 0px;
-  }
-  .title-btn-1 {
-    font-size: 17px;
+  .menus {
+    grid-template-columns: 1fr;
   }
 }
 .empty {
@@ -536,6 +603,51 @@ h4 {
   transform: scale(1.2);
 }
 
+.loader {
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 3s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid #FF79DA;
+  border-left: 5px solid #99E2D0;
+  border-top: 5px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes quarter-spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
