@@ -15,91 +15,133 @@
 
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body><header>
-    <img src="images/ohmyfood.png" alt="logo">
-</header>
-<main>
-    <img class="img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="images">
-</main>
-    <section class="menu">
-        <h1 class="title-menu"> À la française</h1>
-        <button class="heart"></button>
+<body>
+    <header>
+        <a class="arrow" href="accueil.html">
+            <i class="fa-solid fa-arrow-left "></i>
+        </a>
+        <h1 class="title-principal">Ohmyfood</h1>
+    </header>
+    <div>
+        <img class="img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="images">
+    </div>
+    <div class="title-heart">
+        <h1 class="title-menu">À la française</h1>
+            <div class="heart">
+                <i class="fa-regular fa-heart empty"></i>
+                <i class="fa-solid fa-heart full"></i>
+            </div>  
+    </div>
+    <main class="resto-main">
+        <section class="menus">
+            <h3>ENTRÉES</h3>
+            <div class="menus-category">
+                <div class="menu-item">
+                    <div class="description">
+                        <h4> tartare de poule Passy du lait</h4>
+                        <p> vous est Dorange</p>
+                    </div>
+                    <p class="prix">€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Velouté de légumes d'antan</h4>
+                        <p>Carotte, panais,topinambour</p>
+                    </div>
+                    <p class="prix">35€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
 
-        <div class="entry">
-            <h2 class="title">ENTREES</h2>
-            <div class="dish">
-                <h3> tartare de poulpe acidulée</h3>
-                <div>
-                    <h4> Vous est d'orange</h4>
-                    <span>25€</span>
+                <div class="menu-item">
+                    <div class="description">
+                        <h4> supa Loignan </h4>
+                        <p> revisiter</p>
+                    </div>
+                    <p class="prix">€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
                 </div>
             </div>
-            <div class="dish">
-                <h3> velouté de légumes d'antan</h3>
-                <div>
-                    <h4> carotte panais topinambour</h4>
-                    <span>35€</span>
+            <h3>PLATS</h3>
+            <div class="menus-category">
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Cooquilles Saint-Jacques</h4>
+                        <p> Accompagné d'une purée de panais</p>
+                    </div>
+                    <p class="prix"> 40€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Magret de canard</h4>
+                        <p>Et parmentier de pommes de terre </p>
+                    </div>
+                    <p class="prix"> 35€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Pigeonnaux d'Ille-et-Vilaine</h4>
+                        <p> Sur son lit de lit de gnocchi aux légumes</p>
+                    </div>
+                    <p class="prix"> 44€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
                 </div>
             </div>
-            <div class="dish">
-                <h3>Soupe à l'oignon</h3>
-                <div>
-                    <h4>Revisité</h4>
-                    <span>20€</span>
-                    <button></button>
+            
+            <h3>DESSERTS</h3>
+            <div class="menus-category">
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Pétales de violettes glacé</h4>
+                        <p>Et purée de noisette</p>
+                    </div>
+                    <p class="prix"> 18€</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="description">
+                        <h4>Fondant au chocolat</h4>
+                        <p>Revisité</p>
+                    </div>
+                    <p class="prix"> 22</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="description">
+                        <h4> Millefeuille croustillant</h4>
+                        <p> Myrtille et pâte d'amande</p>
+                    </div>
+                    <p class="prix"> 23</p>
+                    <div class="animation">
+                        <i class="fas fa-check checky"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="plats">
-            <h2 class="title">PLATS</h2>
-            <div class="dish">
-                <h3>Coquilles Saint-Jacques</h3>
-                <div>
-                    <h4>Accompagniées d'une purée de panais</h4>
-                    <span>40€</span>
-                </div>
-            </div>
-            <div class="dish">
-                <h3>Magret de canard</h3>
-                <div>
-                    <h4>Et parmentier de pommes de terre</h4>
-                    <span>35€</span>
-                </div>
-            </div>
-            <div class="dish">
-                <h3>Pigeonnaux d'Ille-et Vilaine</h3>
-                <div>
-                    <h4>Sur son lit gnocchis aux légumes</h4>
-                    <span>44€</span>
-                </div>
-            </div>
-        <div class="desserts">
-            <h2 class="">DESSERTS</h2>
-            <div class="dish">
-                <h3>Pétales de violettes glacés</h3>
-                <div>
-                    <h4>Et purée de noisette</h4>
-                    <span>18€</span>
-                </div>
-            </div>
-            <div class="dish">
-                <h3>Fondant au chocolat</h3>
-                <div>
-                    <h4>Revisité</h4>
-                    <span>22€</span>
-                </div>
-            </div>
-            <div class="dish">
-                <h3>Millefeuille croustillant</h3>
-                <div>
-                    <h4>Myrtilles et pâte d'amande</h4>
-                    <span>23€</span>
-                    
-                </div>
-        </div>
-        <button> Commander</button>
-    </section>
-</main>
+        </section>
+    </main>
+
 <footer>
     <h1 class="title-logo">ohmyfood</h1>
     <ul>

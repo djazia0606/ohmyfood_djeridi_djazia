@@ -15,20 +15,7 @@
     background-image:linear-gradient($secondary-color,$primary-color)
   }
   
-  .check{
-    background-color:transparent;
-  width: 0%;
-  transform: scale(0);
-    transition-property:all;
-    transition-duration: 3s;
-  }
-  .price:hover + .check{
-    background-color: $terciary-color;
-    width: 50px;
-    height: 50px;
-    transform: scale(1.2);
-
-  }
+  
   .loader{
     $animation-duration: 1s;
     $animation-count: 3;

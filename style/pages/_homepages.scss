@@ -1,7 +1,10 @@
 body {
     font-family:$font-texte;
-  }
   
+  }
+  main{
+    background-color: white;
+  }
   .img {
     width: 100%;
     height: 170px;
@@ -47,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color:#F6F6F6;
   }
   
   .title-presentation {
@@ -149,7 +152,7 @@ body {
   }
   .restaurants {
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #F6F6F6;
     margin-top: 50px;
     padding-bottom: 40px;
   }
@@ -189,7 +192,7 @@ body {
     position: absolute;
     background: $terciary-color;
     left: 75%;
-    top:1%
+    top:5%
   }
   .title-card{
       margin-top: 10px;

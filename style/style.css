@@ -2,6 +2,10 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+main {
+  background-color: white;
+}
+
 .img {
   width: 100%;
   height: 170px;
@@ -46,7 +50,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: #F6F6F6;
 }
 
 .title-presentation {
@@ -157,7 +161,7 @@ a {
 
 .restaurants {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #F6F6F6;
   margin-top: 50px;
   padding-bottom: 40px;
 }
@@ -201,7 +205,7 @@ a {
   position: absolute;
   background: #99E2D0;
   left: 75%;
-  top: 1%;
+  top: 5%;
 }
 
 .title-card {
@@ -358,14 +362,8 @@ body {
   background-color: #F6F6F6;
 }
 
-.main-restaurants {
-  height: 1200px;
-}
-
-.menu {
-  width: 100%;
-  background: #f2f2f2;
-  border-radius: 20px 20px 0px 0px;
+.resto-main {
+  height: 800px;
 }
 
 .title-principal {
@@ -410,18 +408,21 @@ header {
   margin-bottom: 20px;
 }
 
-.title h3 h4 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.empty {
+  padding-left: 10px;
 }
 
-h3 {
-  font-weight: 600;
-  margin: inherit;
-  margin-left: 10px;
-  margin-top: 10px;
+.full {
+  padding-left: 10px;
 }
 
 h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin: inherit;
+}
+
+p {
   font-weight: 300;
   margin: 0px;
   overflow: hidden;
@@ -429,7 +430,8 @@ h4 {
   white-space: nowrap;
 }
 
-.title {
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin-top: 10px;
@@ -439,37 +441,8 @@ h4 {
   width: 30px;
 }
 
-.price {
+.prix {
   font-weight: 600;
-  margin-right: 10px;
-}
-
-.text-price {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.dish {
-  width: 100%;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px #dedede;
-  height: 66px;
-}
-
-.entry {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.plats {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.dessert {
-  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -485,6 +458,9 @@ h4 {
   box-shadow: 10px 10px 10px #dedede;
   margin-top: 20px;
 }
+.btn-comm .bnt-comm:hover {
+  background-color: #FF79DA;
+}
 
 .title-comm {
   width: 100%;
@@ -496,13 +472,11 @@ h4 {
 }
 
 .menus {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: 1fr;
   background-color: #F6F6F6;
 }
 .menus .menus-category {
-  background-color: white;
+  background-color: #F6F6F6;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -566,7 +540,15 @@ h4 {
 
 @media screen and (min-width: 992px) {
   .menus {
-    grid-template-columns: 1fr;
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .menus-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .empty {
@@ -586,21 +568,6 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(#FF79DA, #9356DC);
-}
-
-.check {
-  background-color: transparent;
-  width: 0%;
-  transform: scale(0);
-  transition-property: all;
-  transition-duration: 3s;
-}
-
-.price:hover + .check {
-  background-color: #99E2D0;
-  width: 50px;
-  height: 50px;
-  transform: scale(1.2);
 }
 
 .loader {
