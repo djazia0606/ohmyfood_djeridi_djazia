@@ -44,31 +44,39 @@ body {
   }
   
   .presentation {
-    width: 100%;
-    height: 286px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#F6F6F6;
+    text-align: center;
+    
   }
+  .presentation h2{
+    margin-top:2rem ;
+    font-size: 2rem;
+  }
+  .presentation p{
+    margin-bottom: 10px;
+  }
+  .presentation button{
+    background-image:$button-gradient;
+    color: white;
+    font-weight: 300;
+    font-size:1rem ;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 7px -3px;
+    transition: all 200ms;
+    margin-top: 20px;
+
+
+  }
+   .presentation button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    opacity: 0.9;
+   }
+   
+
   
-  .title-presentation {
-    width: 100%;
-    font-weight: 700;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-left: 20px;
-  }
-  .text{
-    font-weight: 200;
-    text-align: center;
-    margin:unset;
-    margin-top: Opx;
-    margin-bottom: 30px;
-    }
-    .functioning{
+  .functioning{
       background-color: #ffffff;
     }
   .title-fonctioning{
@@ -76,31 +84,12 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .btn-1 {
-    width:50%;
-    height: 49px;
-    border: 1px solid transparent;
-    background-image:linear-gradient($secondary-color,$primary-color);
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 10px 10px #dedede;
-    margin-bottom: 40px;
-  }
+  
   .btn-1:hover{
     background: lighten($color: $secondary-color, $amount: 10);
   }
   
-  .title-btn-1 {
-    width: 100%;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    
-  }
+  
   .fct {
     display: flex;
     flex-direction: row;

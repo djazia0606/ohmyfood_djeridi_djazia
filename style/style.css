@@ -44,30 +44,35 @@ a {
 }
 
 .presentation {
-  width: 100%;
-  height: 286px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F6F6F6;
+  text-align: center;
 }
 
-.title-presentation {
-  width: 100%;
-  font-weight: 700;
-  display: flex;
-  text-align: center;
-  flex-wrap: wrap;
-  margin-left: 20px;
+.presentation h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
-.text {
-  font-weight: 200;
-  text-align: center;
-  margin: unset;
-  margin-top: Opx;
-  margin-bottom: 30px;
+.presentation p {
+  margin-bottom: 10px;
+}
+
+.presentation button {
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 7px -3px;
+  transition: all 200ms;
+  margin-top: 20px;
+}
+
+.presentation button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 .functioning {
@@ -80,30 +85,8 @@ a {
   margin-bottom: 20px;
 }
 
-.btn-1 {
-  width: 50%;
-  height: 49px;
-  border: 1px solid transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px #dedede;
-  margin-bottom: 40px;
-}
-
 .btn-1:hover {
   background: #fface8;
-}
-
-.title-btn-1 {
-  width: 100%;
-  color: white;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
 }
 
 .fct {
@@ -363,7 +346,7 @@ body {
 }
 
 .resto-main {
-  height: 800px;
+  height: 900px;
 }
 
 .title-principal {
@@ -446,29 +429,29 @@ h3 {
   margin-right: 10px;
 }
 
-.btn-comm {
-  width: 100%;
-  height: 49px;
-  border: 1px solid transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 10px 10px 10px #dedede;
-  margin-top: 20px;
-}
-.btn-comm .bnt-comm:hover {
-  background-color: #FF79DA;
+.order {
+  height: 10vh;
+  display: grid;
+  place-items: center;
 }
 
-.title-comm {
-  width: 100%;
+.order button {
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   color: white;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 7px -3px;
+  transition: all 200ms;
+  margin-top: 20px;
+}
+
+.order button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 .menus {
@@ -480,34 +463,40 @@ h3 {
   border-radius: 20px;
   overflow: hidden;
 }
-.menus .menus-category p {
+.menus p {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menus .menus-category .menu-item {
+.menus .menu-item {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   display: flex;
   border-radius: 20px;
   box-shadow: 2px 1px 8px -3px #000000;
+  background-color: white;
+  animation: appear 1s;
+  animation-fill-mode: both;
 }
-.menus .menus-category .menu-item .description {
+.menus .menu-item:nth-child(1) {
+  animation-delay: 100ms;
+}
+.menus .menu-item .description {
   padding: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menus .menus-category .menu-item .prix {
+.menus .menu-item .prix {
   display: flex;
   align-self: flex-end;
   margin-left: auto;
   font-weight: 700;
   padding: 1rem;
 }
-.menus .menus-category .menu-item .animation {
+.menus .menu-item .animation {
   background-color: #99E2D0;
   margin-right: -4rem;
   width: 4rem;
@@ -517,7 +506,7 @@ h3 {
   justify-content: center;
   place-items: center;
 }
-.menus .menus-category .menu-item .checky {
+.menus .menu-item .checky {
   display: grid;
   place-items: center;
   background: white;
@@ -526,10 +515,101 @@ h3 {
   border-radius: 1rem;
   color: #99E2D0;
 }
-.menus .menus-category .menu-item:hover .animation {
+.menus .menu-item:hover {
+  cursor: pointer;
+}
+.menus .menu-item:hover .animation {
   margin-right: 0;
 }
-.menus .menus-category .menu-item:hover .checky {
+.menus .menu-item:hover .checky {
+  animation: quarter-spin 0.5s ease-in-out;
+}
+.menus .menu-item:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menus .menu-item .description {
+  padding: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus .menu-item .prix {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  font-weight: 700;
+  padding: 1rem;
+}
+.menus .menu-item .animation {
+  background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  transition: margin-right 0.5s;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.menus .menu-item .checky {
+  display: grid;
+  place-items: center;
+  background: white;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  color: #99E2D0;
+}
+.menus .menu-item:hover {
+  cursor: pointer;
+}
+.menus .menu-item:hover .animation {
+  margin-right: 0;
+}
+.menus .menu-item:hover .checky {
+  animation: quarter-spin 0.5s ease-in-out;
+}
+.menus .menu-item:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menus .menu-item .description {
+  padding: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus .menu-item .prix {
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+  font-weight: 700;
+  padding: 1rem;
+}
+.menus .menu-item .animation {
+  background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+  transition: margin-right 0.5s;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+.menus .menu-item .checky {
+  display: grid;
+  place-items: center;
+  background: white;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  color: #99E2D0;
+}
+.menus .menu-item:hover {
+  cursor: pointer;
+}
+.menus .menu-item:hover .animation {
+  margin-right: 0;
+}
+.menus .menu-item:hover .checky {
   animation: quarter-spin 0.5s ease-in-out;
 }
 
@@ -539,6 +619,9 @@ h3 {
 }
 
 @media screen and (min-width: 992px) {
+  .resto-main {
+    height: 800px;
+  }
   .menus {
     display: grid;
     flex-direction: row;
@@ -549,6 +632,9 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .order {
+    height: 30vh;
   }
 }
 .empty {
@@ -613,6 +699,14 @@ h3 {
   }
   100% {
     transform: rotate(0);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /*# sourceMappingURL=style.css.map */

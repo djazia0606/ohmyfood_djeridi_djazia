@@ -3,7 +3,7 @@ body{
   background-color:$lightergrey;
 }
 .resto-main{
-  height: 800px;
+  height: 900px;
 }
 
   .title-principal{
@@ -79,31 +79,31 @@ body{
     margin-right: 10px;
   }
   
-  .btn-comm{
-    width:100%;
-    height: 49px;
-    border: 1px solid transparent;
-    background-image:linear-gradient($secondary-color,$primary-color);
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 10px 10px #dedede;
-    margin-top: 20px;
-  
-   .bnt-comm:hover{
-    background-color:$secondary-color;
-    } 
-  }
-  .title-comm{
-    width: 100%;
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
+  .order{
+    height: 10vh;
+    display: grid;
+    place-items: center;
     
   }
+  .order button{
+    background-image:$button-gradient;
+    color: white;
+    font-weight: 300;
+    font-size:1rem ;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 7px -3px;
+    transition: all 200ms;
+    margin-top: 20px;
+    
+  }
+  .order button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    opacity: 0.9;
+    } 
+  
   .menus{
     grid-template-columns: 1fr;
     background-color:$lightergrey;
@@ -112,6 +112,8 @@ body{
       background-color:#F6F6F6;
       border-radius: 20px;
       overflow: hidden;
+      
+      }
       
       p{
         margin: 0;
@@ -126,6 +128,14 @@ body{
         display: flex;
         border-radius: 20px;
         box-shadow: 2px 1px 8px -3px #000000;
+        background-color: white;
+        animation: appear 1s;
+        animation-fill-mode: both;
+        @for $i from 1 to 4 {
+          &:nth-child(#{$i}){
+            animation-delay: 100ms * $i;
+          }
+          
         .description{
           padding: 1rem;
           overflow: hidden;
@@ -163,6 +173,7 @@ body{
         }
         
         &:hover{
+          cursor: pointer;
           .animation{
             margin-right: 0;
           }
@@ -184,8 +195,9 @@ body{
   
   
   @media screen and (min-width:992px){
-    h3{
-      
+    
+    .resto-main{
+      height:800px
     }
     .menus{
     display: grid;
@@ -200,6 +212,10 @@ body{
       justify-content: space-between;
       
     }
+    .order{
+      height: 30vh;
+    }
+    
     }
     
   
