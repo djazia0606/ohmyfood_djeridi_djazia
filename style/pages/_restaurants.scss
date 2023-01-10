@@ -2,9 +2,6 @@
 body{
   background-color:$lightergrey;
 }
-.resto-main{
-  height: 900px;
-}
 
   .title-principal{
     font-family: Shrikhand;
@@ -21,15 +18,21 @@ body{
     justify-content:flex-start;
     align-items: center;
   }
-  .img{
-    border-radius: 0px;
-    position: relative;
+  .img-resto{
+    display: block;
+    width: 100%;
+    height: 40vh;
+    object-position:center-bottom;
+    object-fit: cover;
+  
   }
   .title-menu{
     background-color: $lightergrey;
     font-family: Shrikhand;
     font-size:300;
     margin-left: 15px;
+  
+  
   }
   
 
@@ -39,12 +42,19 @@ body{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+    position: relative;
+    border-radius: 2rem 2rem 0 0;
   }
   
   .heart{
     margin-bottom: 20px;
   
   }
+  .resto-main{
+    background-color:$lightergrey;
+    margin-top: -2rem;
+    
+    }
    .empty {
     padding-left: 10px;
    }
@@ -83,6 +93,7 @@ body{
     height: 10vh;
     display: grid;
     place-items: center;
+    margin-top: 20px;
     
   }
   .order button{
@@ -112,6 +123,7 @@ body{
       background-color:#F6F6F6;
       border-radius: 20px;
       overflow: hidden;
+      display: inline;
       
       }
       
@@ -122,6 +134,7 @@ body{
         white-space: nowrap;
       }
       .menu-item{
+        margin-bottom: 10px;
         white-space:nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -129,9 +142,9 @@ body{
         border-radius: 20px;
         box-shadow: 2px 1px 8px -3px #000000;
         background-color: white;
-        animation: appear 1s;
+        animation: appear 2s;
         animation-fill-mode: both;
-        @for $i from 1 to 4 {
+        @for $i from 1 through 3 {
           &:nth-child(#{$i}){
             animation-delay: 100ms * $i;
           }
@@ -188,22 +201,16 @@ body{
    
 
   
-  .resto-main{
-  padding:0 1rem;
-  background-color:$lightergrey;
-  }
+  
   
   
   @media screen and (min-width:992px){
     
-    .resto-main{
-      height:800px
-    }
     .menus{
     display: grid;
-    flex-direction:row;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    flex-direction:column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
       
     }
     .menus-category{
@@ -213,7 +220,7 @@ body{
       
     }
     .order{
-      height: 30vh;
+      height: 10vh;
     }
     
     }

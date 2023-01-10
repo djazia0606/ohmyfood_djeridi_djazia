@@ -219,6 +219,11 @@ footer {
   height: 190px;
   background: #343434;
   color: white;
+  margin-top: 40px;
+}
+
+.footer-items {
+  margin-left: 20px;
 }
 
 .title-logo {
@@ -228,11 +233,7 @@ footer {
   padding-top: 20px;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
+p {
   margin-bottom: 3px;
 }
 
@@ -251,9 +252,6 @@ li {
 }
 
 @media screen and (min-width: 992px) {
-  body {
-    width: 100%;
-  }
   #logo {
     width: 40%;
     margin-left: 350px;
@@ -306,14 +304,16 @@ li {
     height: 100px;
   }
   .title-btn-2 {
-    font-size: 25px;
     font-weight: 500;
   }
   .number {
     width: 35px;
     height: 35px;
     position: absolute;
-    left: -3px;
+    left: -10px;
+  }
+  .text-over {
+    left: 60%;
   }
   .btn-2:hover {
     background-color: #FF79DA;
@@ -333,9 +333,6 @@ li {
   .list {
     font-size: 18px;
   }
-  .li {
-    font-size: 18px;
-  }
   .contact {
     font-size: 18px;
   }
@@ -343,10 +340,6 @@ li {
 /* pages menu */
 body {
   background-color: #F6F6F6;
-}
-
-.resto-main {
-  height: 900px;
 }
 
 .title-principal {
@@ -367,9 +360,12 @@ header {
   align-items: center;
 }
 
-.img {
-  border-radius: 0px;
-  position: relative;
+.img-resto {
+  display: block;
+  width: 100%;
+  height: 40vh;
+  object-position: center-bottom;
+  object-fit: cover;
 }
 
 .title-menu {
@@ -385,10 +381,17 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .heart {
   margin-bottom: 20px;
+}
+
+.resto-main {
+  background-color: #F6F6F6;
+  margin-top: -2rem;
 }
 
 .empty {
@@ -433,6 +436,7 @@ h3 {
   height: 10vh;
   display: grid;
   place-items: center;
+  margin-top: 20px;
 }
 
 .order button {
@@ -462,6 +466,7 @@ h3 {
   background-color: #F6F6F6;
   border-radius: 20px;
   overflow: hidden;
+  display: inline;
 }
 .menus p {
   margin: 0;
@@ -470,6 +475,7 @@ h3 {
   white-space: nowrap;
 }
 .menus .menu-item {
+  margin-bottom: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -477,7 +483,7 @@ h3 {
   border-radius: 20px;
   box-shadow: 2px 1px 8px -3px #000000;
   background-color: white;
-  animation: appear 1s;
+  animation: appear 2s;
   animation-fill-mode: both;
 }
 .menus .menu-item:nth-child(1) {
@@ -613,20 +619,12 @@ h3 {
   animation: quarter-spin 0.5s ease-in-out;
 }
 
-.resto-main {
-  padding: 0 1rem;
-  background-color: #F6F6F6;
-}
-
 @media screen and (min-width: 992px) {
-  .resto-main {
-    height: 800px;
-  }
   .menus {
     display: grid;
-    flex-direction: row;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
   .menus-category {
     display: flex;
@@ -634,7 +632,7 @@ h3 {
     justify-content: space-between;
   }
   .order {
-    height: 30vh;
+    height: 10vh;
   }
 }
 .empty {
@@ -703,10 +701,12 @@ h3 {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

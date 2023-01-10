@@ -207,7 +207,11 @@ body {
     height: 190px;
     background:darken($color: grey, $amount: 30);
     color: white;
+    margin-top: 40px;
   
+  }
+  .footer-items{
+    margin-left: 20px;
   }
   .title-logo{
     font-family: Shrikhand;
@@ -215,11 +219,8 @@ body {
     margin-left: 35px;
     padding-top: 20px;
   }
-  ul{
-    list-style: none;
-    
-  }
-  li{
+  
+  p{
     margin-bottom: 3px;
   }
   .contact{
@@ -235,9 +236,7 @@ body {
     margin-right: 10px;
   }
   @media screen and (min-width: 992px) {
-    body{
-      width: 100%;
-    }
+  
     #logo{
       width: 40%;
       margin-left:350px;
@@ -290,14 +289,16 @@ body {
       height: 100px;
     }
     .title-btn-2{
-      font-size: 25px;
       font-weight: 500;
     }
     .number{
       width: 35px;
       height: 35px;
       position:absolute;
-      left: -3px;
+      left: -10px;
+    }
+    .text-over{
+      left: 60%;
     }
     .btn-2:hover{
       background-color:$secondary-color;
@@ -310,6 +311,7 @@ body {
       display: flex;
       justify-content:space-around;
       margin-top: 40px;
+    
     }
     .title-logo{
      text-align: center;
@@ -318,9 +320,7 @@ body {
     .list{
       font-size: 18px;
     }
-    .li{
-      font-size: 18px;
-    }
+    
     .contact{
       font-size: 18px;
     }
