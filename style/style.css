@@ -363,8 +363,7 @@ header {
 .img-resto {
   display: block;
   width: 100%;
-  height: 40vh;
-  object-position: center-bottom;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -466,7 +465,8 @@ h3 {
   background-color: #F6F6F6;
   border-radius: 20px;
   overflow: hidden;
-  display: inline;
+  display: flex;
+  flex-direction: column;
 }
 .menus p {
   margin: 0;
@@ -646,7 +646,7 @@ h3 {
   transition-duration: 2s;
 }
 
-.full:hover {
+.full:active {
   opacity: 1;
   color: transparent;
   background-clip: text;
