@@ -163,7 +163,7 @@ a {
   border-radius: 20px;
   box-shadow: 10px 10px 20px #dedede;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .img {
@@ -340,6 +340,7 @@ p {
 /* pages menu */
 body {
   background-color: #F6F6F6;
+  margin: 0px;
 }
 
 .title-principal {
@@ -475,6 +476,8 @@ h3 {
   white-space: nowrap;
 }
 .menus .menu-item {
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
