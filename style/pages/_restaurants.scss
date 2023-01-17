@@ -1,6 +1,7 @@
 /* pages menu */
 body{
   background-color:$lightergrey;
+
 }
 
   .title-principal{
@@ -134,6 +135,8 @@ body{
         white-space: nowrap;
       }
       .menu-item{
+        margin-left: 10px;
+        margin-right: 10px;
         margin-bottom: 10px;
         white-space:nowrap;
         text-overflow: ellipsis;
