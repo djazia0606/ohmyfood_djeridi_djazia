@@ -116,13 +116,12 @@ a {
 .btn-2:hover {
   background: #e4d5f6;
 }
+.btn-2:hover .icon {
+  color: #9356DC;
+}
 
 .icon {
   margin-right: 20px;
-}
-
-.icon:hover {
-  background-image: #e4d5f6;
 }
 
 .title-btn-2 {

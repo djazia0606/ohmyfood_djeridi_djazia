@@ -113,14 +113,17 @@ body {
   }
   .btn-2:hover{
     background: lighten($color: $primary-color, $amount: 30);
-  }
+    .icon{
+      color:$primary-color
+    }
+    }
+    
+  
   .icon {
     margin-right: 20px;
     
   }
-  .icon:hover{
-    background-image: lighten($color: $primary-color, $amount: 30);
-  }
+  
   
   .title-btn-2 {
     font-style: normal;
