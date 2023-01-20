@@ -70,7 +70,11 @@ body {
     opacity: 0.9;
    }
    
-
+.description{
+  font-weight: 300;
+    margin: 0px;
+    white-space:inherit;
+}
   
   .functioning{
       background-color: #ffffff;
@@ -108,10 +112,14 @@ body {
     margin-bottom: 20px;
   }
   .btn-2:hover{
-    background-color:$secondary-color;
+    background: lighten($color: $primary-color, $amount: 30);
   }
   .icon {
     margin-right: 20px;
+    
+  }
+  .icon:hover{
+    background-image: lighten($color: $primary-color, $amount: 30);
   }
   
   .title-btn-2 {

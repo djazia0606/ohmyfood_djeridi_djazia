@@ -71,6 +71,12 @@ a {
   opacity: 0.9;
 }
 
+.description {
+  font-weight: 300;
+  margin: 0px;
+  white-space: inherit;
+}
+
 .functioning {
   background-color: #ffffff;
 }
@@ -108,11 +114,15 @@ a {
 }
 
 .btn-2:hover {
-  background-color: #FF79DA;
+  background: #e4d5f6;
 }
 
 .icon {
   margin-right: 20px;
+}
+
+.icon:hover {
+  background-image: #e4d5f6;
 }
 
 .title-btn-2 {
@@ -342,9 +352,9 @@ body {
 .title-principal {
   font-family: Shrikhand;
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   flex-grow: 1;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .arrow {
@@ -360,7 +370,6 @@ header {
 .img-resto {
   display: block;
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
