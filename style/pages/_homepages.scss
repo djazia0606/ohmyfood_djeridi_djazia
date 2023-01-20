@@ -116,7 +116,7 @@ body {
     .icon{
       color:$primary-color
     }
-    }
+  }
     
   
   .icon {
@@ -203,6 +203,11 @@ body {
   .heart{
     margin-right:40px;
     font-size:larger
+  }
+  .test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .name{
     margin: 0px;
